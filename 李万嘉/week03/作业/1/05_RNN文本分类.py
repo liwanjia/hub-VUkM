@@ -147,7 +147,7 @@ embedding_dim = 64
 hidden_dim = 128
 output_dim = len(label_to_index)
 
-model = RNNClassifier(vocab_size, embedding_dim, hidden_dim, output_dim)
+model = RNNClassifier(vocab_size, embedding_dim, hidden_dim, output_dim, 2, True, 1)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
